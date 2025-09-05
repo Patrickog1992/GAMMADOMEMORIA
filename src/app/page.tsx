@@ -6,6 +6,11 @@ import CommentSection from "@/components/comment-section";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <div className="bg-destructive text-destructive-foreground text-center p-3 font-semibold text-base md:text-lg">
+        <p>
+          ATENÇÃO: Devido as grande indústrias que lucram com remédios para memória estar nos processando esse site irá sair do ar hoje: 05/09/2025
+        </p>
+      </div>
       <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
         <VideoPlayer />
 
