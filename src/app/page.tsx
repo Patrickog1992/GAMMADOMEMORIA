@@ -1,9 +1,25 @@
+"use client";
+
 import Image from "next/image";
 import VideoPlayer from "@/components/video-player";
 import { Button } from "@/components/ui/button";
 import CommentSection from "@/components/comment-section";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    // There is no way to get the current time from the vturb player,
+    // so we will show the button after a timeout.
+    const showButtonTimeout = 19 * 60 * 1000 + 57 * 1000; // 19 minutes and 57 seconds
+    const timer = setTimeout(() => {
+      setShowButton(true);
+    }, showButtonTimeout);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <div className="bg-destructive text-destructive-foreground text-center p-3 font-semibold text-base md:text-lg">
@@ -17,9 +33,11 @@ export default function Home() {
         </h1>
         <VideoPlayer />
 
-        <Button asChild size="lg" className="my-8 animate-pulse text-2xl h-auto py-4 px-8 font-bold text-primary-foreground bg-primary hover:bg-primary/90">
-          <a href="https://pay.kirvano.com/eac9c19f-454c-4b54-983d-e83a6232d496">QUERO ACESSO IMEDIATO!</a>
-        </Button>
+        {showButton && (
+          <Button asChild size="lg" className="my-8 animate-pulse text-2xl h-auto py-4 px-8 font-bold text-primary-foreground bg-primary hover:bg-primary/90">
+            <a href="https://pay.kirvano.com/eac9c19f-454c-4b54-983d-e83a6232d496">QUERO ACESSO IMEDIATO!</a>
+          </Button>
+        )}
         
         <div className="my-4">
             <Image
