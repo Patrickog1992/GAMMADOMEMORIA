@@ -53,7 +53,7 @@ const comments: Comment[] = [
     {
         id: 6,
         name: "Beatriz Almeida",
-        avatar: "https://picsum.photos/id/242/48/48",
+        avatar: "https://i.imgur.com/s69P41y.jpg",
         comment: "Minha produtividade no trabalho aumentou muito! Consigo focar e lembrar de tudo que preciso. O Gamma do Memória mudou minha rotina para melhor.",
         likes: 241,
         hearts: 199,
