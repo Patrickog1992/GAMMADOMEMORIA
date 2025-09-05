@@ -28,9 +28,10 @@ export default function Home() {
         </p>
       </div>
       <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-4">
           Cientista que já atuou na NASA expõe o <span className="text-red-500">método de 8 segundos capaz de reativar a memória</span> esquecida sem remédios ou treinos mentais.
         </h1>
+        <p className="text-lg mb-8">VEJÁ O VIDEO ABAIXO (COM O SOM LIGADO)</p>
         <VideoPlayer />
 
         {showButton && (
