@@ -25,8 +25,8 @@ export default function Home() {
             <Image
                 src="https://i.imgur.com/Lg34LJp.png"
                 alt="Selo de Garantia"
-                width={600}
-                height={600}
+                width={800}
+                height={163}
                 className="mx-auto"
                 data-ai-hint="guarantee seal"
             />
