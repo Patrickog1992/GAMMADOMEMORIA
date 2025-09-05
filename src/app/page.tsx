@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <AlertBanner />
-      <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
+      <main className="flex flex-col items-center justify-center px-4 py-12 text-center pt-24">
         <VideoPlayer />
 
         <Button asChild size="lg" className="my-8 animate-pulse text-2xl h-auto py-4 px-8 font-bold text-primary-foreground bg-primary hover:bg-primary/90">
