@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-8">
-          Cientista que já atuou na NASA expõe o método de 8 segundos capaz de reativar a memória esquecida sem remédios ou treinos mentais.
+          Cientista que já atuou na NASA expõe o <span className="text-red-500">método de 8 segundos capaz de reativar a memória</span> esquecida sem remédios ou treinos mentais.
         </h1>
         <VideoPlayer />
 
