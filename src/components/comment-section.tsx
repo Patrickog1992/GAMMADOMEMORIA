@@ -42,11 +42,27 @@ const comments: Comment[] = [
         likes: 302,
         hearts: 250,
     },
+    {
+        id: 5,
+        name: "Rafael Martins",
+        avatar: "https://picsum.photos/id/241/48/48",
+        comment: "Funciona mesmo! Tinha dificuldade para lembrar de nomes e datas, agora parece que tenho uma memória fotográfica. Sensacional!",
+        likes: 178,
+        hearts: 133,
+    },
+    {
+        id: 6,
+        name: "Beatriz Almeida",
+        avatar: "https://picsum.photos/id/242/48/48",
+        comment: "Minha produtividade no trabalho aumentou muito! Consigo focar e lembrar de tudo que preciso. O Gamma do Memória mudou minha rotina para melhor.",
+        likes: 241,
+        hearts: 199,
+    },
 ];
 
 export default function CommentSection() {
   return (
-    <section className="w-full max-w-5xl mt-20">
+    <section className="w-full max-w-2xl mt-20">
       <h2 className="text-4xl font-bold text-center mb-10">
         Veja os comentários
       </h2>
