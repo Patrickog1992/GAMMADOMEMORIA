@@ -48,9 +48,9 @@ export default function CommentSection() {
   return (
     <section className="w-full max-w-5xl mt-20">
       <h2 className="text-4xl font-bold text-center mb-10">
-        O que nossos clientes felizes dizem
+        Veja os comentários
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="flex flex-col gap-6">
         {comments.map((comment) => (
           <CommentCard key={comment.id} {...comment} />
         ))}
