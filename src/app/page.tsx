@@ -5,9 +5,11 @@ import VideoPlayer from "@/components/video-player";
 import { Button } from "@/components/ui/button";
 import CommentSection from "@/components/comment-section";
 import { useState, useEffect } from "react";
+import { format } from "date-fns";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
+  const [currentDate, setCurrentDate] = useState("");
 
   useEffect(() => {
     // There is no way to get the current time from the vturb player,
@@ -17,6 +19,8 @@ export default function Home() {
       setShowButton(true);
     }, showButtonTimeout);
 
+    setCurrentDate(format(new Date(), 'dd/MM/yyyy'));
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -24,7 +28,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <div className="bg-destructive text-destructive-foreground text-center p-3 font-semibold text-base md:text-lg">
         <p>
-          ATENÇÃO: Devido as grande indústrias que lucram com remédios para memória estar nos processando esse site irá sair do ar hoje: <span className="text-yellow-400">05/09/2025</span>
+          ATENÇÃO: Devido as grande indústrias que lucram com remédios para memória estar nos processando esse site irá sair do ar hoje: <span className="text-yellow-400">{currentDate}</span>
         </p>
       </div>
       <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
