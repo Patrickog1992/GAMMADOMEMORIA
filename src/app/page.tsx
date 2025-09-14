@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import CommentSection from "@/components/comment-section";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
+import G1Header from "@/components/g1-header";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <G1Header />
       <div className="bg-destructive text-destructive-foreground text-center p-3 font-semibold text-base md:text-lg">
         <p>
           ATENÇÃO: Devido as grande indústrias que lucram com remédios para memória estar nos processando esse site irá sair do ar hoje: <span className="text-yellow-400">{currentDate}</span>
