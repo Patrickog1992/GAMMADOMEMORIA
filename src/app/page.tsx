@@ -39,7 +39,7 @@ export default function Home() {
         <VideoPlayer />
 
         {showButton && (
-          <Button asChild size="lg" className="my-8 animate-pulse text-2xl h-auto py-4 px-8 font-bold text-primary-foreground bg-primary hover:bg-primary/90">
+          <Button asChild size="lg" className="my-8 animate-pulse text-2xl h-auto py-4 px-8 font-bold text-white bg-primary hover:bg-primary/90">
             <a href="https://pay.kirvano.com/eac9c19f-454c-4b54-983d-e83a6232d496">QUERO ACESSO IMEDIATO!</a>
           </Button>
         )}

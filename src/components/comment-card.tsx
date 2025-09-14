@@ -5,7 +5,7 @@ import type { Comment } from './comment-section';
 
 export default function CommentCard({ name, avatar, comment, likes, hearts }: Comment) {
   return (
-    <Card className="text-left bg-white text-black">
+    <Card className="text-left bg-gray-100 text-black">
       <CardHeader className="flex flex-row items-center gap-3 p-4">
         <Avatar className="h-10 w-10">
           <AvatarImage src={avatar} alt={name} data-ai-hint="person portrait" />
