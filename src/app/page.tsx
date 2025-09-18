@@ -26,13 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <G1Header />
-      <div className="bg-destructive text-destructive-foreground text-center p-3 font-semibold text-base md:text-lg">
-        <p>
-          ATENÇÃO: Devido as grande indústrias que lucram com remédios para memória estar nos processando esse site irá sair do ar hoje: <span className="text-yellow-400">{currentDate}</span>
-        </p>
-      </div>
+    <div className="flex flex-col min-h-screen bg-white text-black">
       <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-4">
           Cientista que já atuou na NASA expõe o <span className="text-red-500">método de 8 segundos capaz de reativar a memória</span> esquecida sem remédios ou treinos mentais.
