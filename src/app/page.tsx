@@ -26,16 +26,16 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen text-white">
+    <div className="flex flex-col min-h-screen">
       <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-4 text-white">
+        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-4 text-foreground">
           A fórmula simples e comprovada que já ajudou milhares a faturar na loteria
         </h1>
-        <p className="text-base mb-8 text-white/80">VEJA O VÍDEO ABAIXO (COM O SOM LIGADO)</p>
+        <p className="text-base mb-8 text-foreground/80">VEJA O VÍDEO ABAIXO (COM O SOM LIGADO)</p>
         <VideoPlayer />
 
         {showButton && (
-          <Button asChild size="lg" className="my-8 animate-pulse text-2xl h-auto py-4 px-8 font-bold text-white bg-primary hover:bg-primary/90">
+          <Button asChild size="lg" className="my-8 animate-pulse text-2xl h-auto py-4 px-8 font-bold">
             <a href="https://pay.kirvano.com/7d32fb5b-3a63-4fc1-98f6-aa6218f19b0a">QUERO ACESSO IMEDIATO!</a>
           </Button>
         )}

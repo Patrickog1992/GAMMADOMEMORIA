@@ -63,7 +63,7 @@ const comments: Comment[] = [
 export default function CommentSection() {
   return (
     <section className="w-full max-w-2xl mt-20">
-      <h2 className="text-4xl font-bold text-center mb-10 text-white">
+      <h2 className="text-4xl font-bold text-center mb-10 text-foreground">
         Veja os comentários
       </h2>
       <div className="flex flex-col gap-6">
