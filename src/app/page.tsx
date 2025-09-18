@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     // There is no way to get the current time from the vturb player,
     // so we will show the button after a timeout.
-    const showButtonTimeout = 5 * 1000; // 5 seconds
+    const showButtonTimeout = (28 * 60 + 22) * 1000; // 28 minutes and 22 seconds
     const timer = setTimeout(() => {
       setShowButton(true);
     }, showButtonTimeout);
