@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
 import { DollarSign } from "lucide-react";
+import CommentSection from "@/components/comment-section";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -25,12 +26,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen text-black">
+    <div className="flex flex-col min-h-screen text-white">
       <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-4 text-black">
+        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-4 text-white">
           A fórmula simples e comprovada que já ajudou milhares a faturar na loteria
         </h1>
-        <p className="text-base mb-8 text-black/80">VEJA O VÍDEO ABAIXO (COM O SOM LIGADO)</p>
+        <p className="text-base mb-8 text-white/80">VEJA O VÍDEO ABAIXO (COM O SOM LIGADO)</p>
         <VideoPlayer />
 
         {showButton && (
@@ -38,6 +39,7 @@ export default function Home() {
             <a href="https://pay.kirvano.com/7d32fb5b-3a63-4fc1-98f6-aa6218f19b0a">QUERO ACESSO IMEDIATO!</a>
           </Button>
         )}
+        <CommentSection />
       </main>
     </div>
   );
