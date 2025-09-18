@@ -3,10 +3,9 @@
 import Image from "next/image";
 import VideoPlayer from "@/components/video-player";
 import { Button } from "@/components/ui/button";
-import CommentSection from "@/components/comment-section";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
-import G1Header from "@/components/g1-header";
+import { DollarSign } from "lucide-react";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -26,12 +25,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-white text-black">
+    <div className="flex flex-col min-h-screen text-black">
       <main className="flex flex-col items-center justify-center px-4 py-12 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-4">
-          Cientista que já atuou na NASA expõe o <span className="text-red-500">método de 8 segundos capaz de reativar a memória</span> esquecida sem remédios ou treinos mentais.
+        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto mb-4 text-black">
+          A fórmula simples e comprovada que já ajudou milhares a faturar na loteria
         </h1>
-        <p className="text-base mb-8">VEJÁ O VIDEO ABAIXO (COM O SOM LIGADO)</p>
+        <p className="text-base mb-8 text-black/80">VEJA O VÍDEO ABAIXO (COM O SOM LIGADO)</p>
         <VideoPlayer />
 
         {showButton && (
@@ -39,19 +38,6 @@ export default function Home() {
             <a href="https://pay.kirvano.com/7d32fb5b-3a63-4fc1-98f6-aa6218f19b0a">QUERO ACESSO IMEDIATO!</a>
           </Button>
         )}
-        
-        <div className="my-4">
-            <Image
-                src="https://i.imgur.com/Lg34LJp.png"
-                alt="Selo de Garantia"
-                width={800}
-                height={163}
-                className="mx-auto"
-                data-ai-hint="guarantee seal"
-            />
-        </div>
-
-        <CommentSection />
       </main>
     </div>
   );
