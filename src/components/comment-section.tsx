@@ -53,7 +53,7 @@ const comments: Comment[] = [
     {
         id: 6,
         name: "Beatriz Almeida",
-        avatar: "https://i.imgur.com/s69P41y.jpg",
+        avatar: "https://i.imgur.com/dn9wi1S.png",
         comment: "Minha confiança para apostar aumentou muito! Consigo seguir uma estratégia clara. O Protocolo LotoLógica mudou meu jeito de jogar.",
         likes: 241,
         hearts: 199,
