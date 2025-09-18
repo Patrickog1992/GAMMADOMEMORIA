@@ -42,7 +42,7 @@ export default function Home() {
 
         {showButton && (
           <Button asChild size="lg" className="my-8 animate-pulse text-2xl h-auto py-4 px-8 font-bold text-white bg-primary hover:bg-primary/90">
-            <a href="https://pay.kirvano.com/eac9c19f-454c-4b54-983d-e83a6232d496">QUERO ACESSO IMEDIATO!</a>
+            <a href="https://pay.kirvano.com/7d32fb5b-3a63-4fc1-98f6-aa6218f19b0a">QUERO ACESSO IMEDIATO!</a>
           </Button>
         )}
         
